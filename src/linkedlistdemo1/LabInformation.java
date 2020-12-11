@@ -86,22 +86,12 @@ public class LabInformation
        return menuSelection;
    }
    
-    public void addReservation()
+    public void addTechnician()
     {
-        //1. ask user for information needed to create a reservation object
-        //2. instantiate a Reservation object
-        //Example:   Date aDate = new Date(yyyy, mm, dd, hrs, min, 00); 
-        //  Calendar myCalendar = Calendar.getInstance();
-        //  myCalendar.set(year,month, day, hourOfDay,  minute);
         
-        //Reservation aReservation = new Reservation(firstName, lastName, myCalendar, partySize);
-        //3. pass the reservation object to Helper class' add method
-        //4. receive a return code from Helper's add method, and display appropriate message 
-        //   a.  successfully added reservation
-        //   b.  unable to add reservation
         
-        Reservation aReservation = new Reservation();
-        if (myHelper.addReservation(aReservation) == 0)
+        Technician aReservation = new Technician();
+        if (myHelper.addtechnician(aReservation) == 0)
         {
             System.out.println("Your reservation was added. Thanks!");
         }

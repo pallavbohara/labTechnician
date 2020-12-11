@@ -15,16 +15,16 @@ import java.util.Queue;
  */
 public class Helper {
     
-    List<Technician> technicianList = new List<>();
+    List<Technician> technicianList = new LinkedList<Technician>();
 //    LinkedList<Reservation> reservationList = new LinkedList<>();
 //
 //    Queue<Reservation> walkInQueue = new LinkedList<>();
     
-  public int searchTechnician(int id)
+  public Technician searchTechnician(int id)
   {
       
       for (Technician technician : technicianList) {
-        if (technician.getId().equals(id)) {
+        if (technician.getTechnicianId()==id) {
             return technician;
         }
     }
