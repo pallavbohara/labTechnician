@@ -16,7 +16,7 @@ public class LabEquipment {
    private int labId;  
    private boolean equipmentState ;
 
-    public boolean isEquipmentState() {
+    public boolean getEquipmentState() {
         return equipmentState;
     }
 

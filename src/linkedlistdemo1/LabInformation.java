@@ -201,10 +201,9 @@ public class LabInformation {
             System.out.println("Enter equipmentState");
             String equipmentState = dis.readLine();
 
-            System.out.println("Enter Technicians");
-            String technicians = dis.readLine();
+            
             LabEquipment aLabEquipment = new LabEquipment(labEquipmentId, labEquipmentName, labId, equipmentState);
-            if (myHelper.addlabequipment(aLabEquipment) >= 0) {
+            if (myHelper.addlabequipment(aLabEquipment) < 0) {
                 System.out.println("LabEquiment Created added. Thanks!");
             } else {
                 System.out.println("Sorry, we are unable to create labequiment at this time.  Please try again.");
@@ -229,6 +228,6 @@ public class LabInformation {
         System.out.println("lab EquipmentId " + L.getLabEquipmentId());
         System.out.println("labEquipmentName " + L.getLabEquipmentName());
         System.out.println("Lab Id " + L.getLabId());
-        System.out.println("lab Equipment " + L.isEquipmentState());
+        System.out.println("lab Equipment " + L.getEquipmentState());
     }
 }
