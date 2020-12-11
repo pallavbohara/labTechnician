@@ -77,5 +77,13 @@ public class Lab {
     {
         return "\nLab Id= "+labId + "\nLab Name= "+labName + "  \nPhone Number= " + phoneNumber + " " + "  \nLabEquipment: " + labEquipment + "\nTechnicians:" +technicians+ "\n \n" ;
     }
+
+    String getlabEquipmentName() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    String getequipmentState() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

@@ -15,6 +15,14 @@ public class LabEquipment {
    private String labEquipmentName;
    private int labId;  
    private boolean equipmentState ;
+
+    public boolean isEquipmentState() {
+        return equipmentState;
+    }
+
+    public void setEquipmentState(boolean equipmentState) {
+        this.equipmentState = equipmentState;
+    }
    
 
 
@@ -30,6 +38,10 @@ public class LabEquipment {
         equipmentState=aequipmentState;
       
     }    
+
+    LabEquipment(int labEquipmentId, String labEquipmentName, int labId, String equipmentState) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
     public int getLabEquipmentId() {
         return labEquipmentId;
@@ -55,13 +67,7 @@ public class LabEquipment {
         this.labId = labId;
     }
 
-    public boolean isEquipmentState() {
-        return equipmentState;
-    }
-
-    public void setEquipmentState(boolean equipmentState) {
-        this.equipmentState = equipmentState;
-    }
+    
 
        
        
