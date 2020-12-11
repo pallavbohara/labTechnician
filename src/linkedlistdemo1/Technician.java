@@ -14,8 +14,7 @@ import java.util.Calendar;
     
                 
         private int technicianId;
-        private String labEquipmentName;
-        private String firstName;
+         private String firstName;
         private String lastName;
         private String email;
         private String phonenumber;
@@ -28,10 +27,10 @@ import java.util.Calendar;
   
    
     
-    public Technician (int atechnicianId,String alabEquipmentName, String afirstName, String alastName, String aemail,String aphonenumber,String aspeciality)
+    public Technician (int atechnicianId, String afirstName, String alastName, String aemail,String aphonenumber,String aspeciality)
     {
         technicianId = atechnicianId;
-        labEquipmentName = alabEquipmentName;
+       
         firstName =afirstName;
         lastName=alastName;
         email=aemail;
@@ -45,16 +44,7 @@ import java.util.Calendar;
 
     public void setTechnicianId(int technicianId) {
         this.technicianId = technicianId;
-    }
-
-    public String getLabEquipmentName() {
-        return labEquipmentName;
-    }
-
-    public void setLabEquipmentName(String labEquipmentName) {
-        this.labEquipmentName = labEquipmentName;
-    }
-
+    }  
     public String getFirstName() {
         return firstName;
     }
@@ -102,7 +92,7 @@ import java.util.Calendar;
  
     public String toString()
     {
-        return "\n \n"  + "\nlab Equipment Id= "+technicianId + "\nlabEquipmentName= "+labEquipmentName + "  \nfirtName= " + firstName + "  \nlastName= " + lastName + "  \nemail= " + email + "  \nPhone No= " + phonenumber + "  \nspeciality= " + speciality ;
+        return "  \nfirtName= "  + "\n \n"  + "\nlab Equipment Id= "+technicianId + firstName + "  \nlastName= " + lastName + "  \nemail= " + email + "  \nPhone No= " + phonenumber + "  \nspeciality= " + speciality ;
     }
     
 }
