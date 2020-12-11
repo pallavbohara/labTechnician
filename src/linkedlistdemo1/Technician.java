@@ -10,26 +10,50 @@ import java.util.Calendar;
 /**
  *
  * @author HP
- */
-public class Technician {
-    private int technicianId;
-    private String firstName;
-    private String lastName;
+ */public class Technician {
     
-    public Technician()
+                
+        private int technicianId;
+        private String labEquipmentName;
+        private String firstName;
+        private String lastName;
+        private String email;
+        private String phonenumber;
+       private String speciality;
+  
+   
+
+
+     //Date(int year, int month, int date, int hrs, int min, int sec)
+  
+   
+    
+    public Technician (int atechnicianId,String alabEquipmentName, String afirstName, String alastName, String aemail,String aphonenumber,String aspeciality)
     {
-        firstName = "";
-        lastName = "";
-        reservationDateTime = Calendar.getInstance();
-        sizeOfParty = 0;
-    }
-    public Technician(String aFirstName, String aLastName, Calendar aTechnicianDateTime, int aPartySize)
-    {
-        firstName = aFirstName;
-        lastName = aLastName;
-        reservationDateTime = aTechnicianDateTime;
-        sizeOfParty = aPartySize;
+        technicianId = atechnicianId;
+        labEquipmentName = alabEquipmentName;
+        firstName =afirstName;
+        lastName=alastName;
+        email=aemail;
+        phonenumber=aphonenumber;
+        speciality= aspeciality;
     }    
+
+    public int getTechnicianId() {
+        return technicianId;
+    }
+
+    public void setTechnicianId(int technicianId) {
+        this.technicianId = technicianId;
+    }
+
+    public String getLabEquipmentName() {
+        return labEquipmentName;
+    }
+
+    public void setLabEquipmentName(String labEquipmentName) {
+        this.labEquipmentName = labEquipmentName;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -47,27 +71,38 @@ public class Technician {
         this.lastName = lastName;
     }
 
-    public Calendar getTechnicianDateTime() {
-        return reservationDateTime;
+    public String getEmail() {
+        return email;
     }
 
-    public void setTechnicianDateTime(Calendar reservationDateTime) {
-        this.reservationDateTime = reservationDateTime;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public int getSizeOfParty() {
-        return sizeOfParty;
+    public String getPhonenumber() {
+        return phonenumber;
     }
 
-    public void setSizeOfParty(int sizeOfParty) {
-        this.sizeOfParty = sizeOfParty;
+    public void setPhonenumber(String phonenumber) {
+        this.phonenumber = phonenumber;
     }
-    
+
+    public String getSpeciality() {
+        return speciality;
+    }
+
+    public void setSpeciality(String speciality) {
+        this.speciality = speciality;
+    }
+
+   
+       
+       
+
+ 
     public String toString()
     {
-        return firstName + " " + lastName + " " + "reservation: " + 
-                reservationDateTime.getTime();
+        return "\n \n"  + "\nlab Equipment Id= "+technicianId + "\nlabEquipmentName= "+labEquipmentName + "  \nfirtName= " + firstName + "  \nlastName= " + lastName + "  \nemail= " + email + "  \nPhone No= " + phonenumber + "  \nspeciality= " + speciality ;
     }
     
-   
 }
